@@ -28,11 +28,17 @@ public class DamageOnCollide : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        HitObject(collider.gameObject);
+        if (!collider.transform.parent.parent.CompareTag("Station"))
+        {
+            HitObject(collider.gameObject);
+
+        }
+
     }
 
     void OnCollisionEnter(Collision collision)
     {
+        
         HitObject(collision.gameObject);
     }
 }

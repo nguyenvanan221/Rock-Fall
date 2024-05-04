@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class ShipWeapons : MonoBehaviour
 {
-    public GameObject shotPrefab;
-
     public Transform[] firePoints;
 
     private int firePointIndex;
@@ -33,7 +31,14 @@ public class ShipWeapons : MonoBehaviour
         }
         var firePointToUse = firePoints[firePointIndex];
 
-        Instantiate(shotPrefab, firePointToUse.position, firePointToUse.rotation);
+        GameObject shot = ObjectPool.Instance.GetPooledObject();
+        if (shot != null)
+        {
+            shot.transform.position = firePointToUse.transform.position;
+            shot.transform.rotation = firePointToUse.transform.rotation;
+            shot.SetActive(true);
+        }
+
 
         //audio
         var audio = firePointToUse.GetComponent<AudioSource>();

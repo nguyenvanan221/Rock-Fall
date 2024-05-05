@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.Advertisements;
 
-public class Interstitial : Singleton<Interstitial>, IUnityAdsLoadListener, IUnityAdsShowListener
+public class RewardedAd : Singleton<RewardedAd>, IUnityAdsLoadListener, IUnityAdsShowListener
 {
-    [SerializeField] string _androidAdUnitId = "Interstitial_Android";
-    [SerializeField] string _iOsAdUnitId = "Interstitial_iOS";
+    [SerializeField] string _androidAdUnitId = "Rewarded_Android";
+    [SerializeField] string _iOsAdUnitId = "Rewarded_iOS";
     string _adUnitId;
 
     void Awake()

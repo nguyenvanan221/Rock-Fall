@@ -63,7 +63,7 @@ public class GameManager : Singleton<GameManager>
 
     public void StartGame()
     {
-        Interstitial.Instance.ShowAd();
+        RewardedAd.Instance.ShowAd();
 
         ShowUI(inGameUI);
 

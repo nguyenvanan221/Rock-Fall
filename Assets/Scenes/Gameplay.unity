@@ -1001,9 +1001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7afc28a19a843848853e106197d5798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _androidAdUnitId: Interstitial_Android
-  _iOsAdUnitId: Interstitial_iOS
-  showAds: 1
+  _androidAdUnitId: Rewarded_Android
+  _iOsAdUnitId: Rewarded_iOS
 --- !u!114 &831536956
 MonoBehaviour:
   m_ObjectHideFlags: 0

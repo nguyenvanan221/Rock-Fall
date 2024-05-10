@@ -5392,7 +5392,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7168466201427908131
 Transform:
   m_ObjectHideFlags: 0
@@ -5497,7 +5497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f56392c73dbf1e14ca290cb922f7295e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 5
 --- !u!114 &773611271519633335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5510,7 +5510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c53b66d2e10a21c4ca1edc17602fc3f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnRate: 6
+  turnRate: 5
   levelDamping: 1
 --- !u!114 &1484594929689918148
 MonoBehaviour:
@@ -5524,7 +5524,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33c78ae7b113ff44789be5745d4e9b27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotPrefab: {fileID: 6265765117527938599, guid: f8aefbe5a2e2c484fa17d4d2dba2d0c0, type: 3}
   firePoints:
   - {fileID: 2964592382183742206}
   - {fileID: 7184002303138099562}

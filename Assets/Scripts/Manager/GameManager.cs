@@ -63,7 +63,7 @@ public class GameManager : Singleton<GameManager>
 
     public void StartGame()
     {
-        RewardedAd.Instance.ShowAd();
+        //RewardedAd.Instance.LoadAd();
 
         ShowUI(inGameUI);
 
@@ -83,7 +83,7 @@ public class GameManager : Singleton<GameManager>
         CurrentShip.transform.position = shipStartPosition.transform.position;
         CurrentShip.transform.rotation = shipStartPosition.transform.rotation;
 
-        CurrentSpaceStation= Instantiate(spaceStationPrefab);
+        CurrentSpaceStation = Instantiate(spaceStationPrefab);
         CurrentSpaceStation.transform.position = spaceStationStartPosition.transform.position;
 
         //camera
@@ -94,7 +94,7 @@ public class GameManager : Singleton<GameManager>
         asteroidSpawner.spawnAsteroids = true;
         asteroidSpawner.target = CurrentSpaceStation.transform;
 
-        timer.StartClock();
+        //timer.StartClock();
 
     }
 

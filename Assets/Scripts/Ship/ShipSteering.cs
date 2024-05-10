@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShipSteering : MonoBehaviour
 {
     //rate the ship turns
-    public float turnRate = 6.0f;
+    public float turnRate = 5.0f;
 
     //the strength which the ship levels out
     public float levelDamping = 1.0f;
